@@ -16,7 +16,9 @@
 
 
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/155f53c2-7a5a-4e4e-8884-ef575bb4ab2a" />
+</div>
 
+<br>
 
 ---
 
@@ -27,7 +29,7 @@
 A single-page business card website for a data analyst. Its goal is to present experience, skills and education concisely and professionally, offer a CV download and lead employers to get in touch. The website is available in Russian and English.
 
 | Раздел · Section | Что внутри · Content |
-| --- | --- |
+|---|---|
 | [Hero](https://katymist.github.io/DataAnalyst-Portfolio/#hero) | Аналитик данных, фото, резюме и связь<br>Data Analyst, photo, CV download and contact |
 | [Обо мне · About](https://katymist.github.io/DataAnalyst-Portfolio/#about) | Опыт построения аналитики с нуля, LLM, работа с заказчиками<br>Building analytics from scratch, LLMs, stakeholder work |
 | [Опыт · Experience](https://katymist.github.io/DataAnalyst-Portfolio/#experience) | Места работы и достижения<br>Work history and achievements |
@@ -38,7 +40,7 @@ A single-page business card website for a data analyst. Its goal is to present e
 ## Возможности · Features
 
 | Русский | English |
-| --- | --- |
+|---|---|
 | **Два языка**: переключатель RU / EN, выбор сохраняется в `localStorage` | **Two languages**: RU / EN toggle, choice saved in `localStorage` |
 | **Анимации появления** блоков при прокрутке (`IntersectionObserver`) | **Reveal animations** on scroll (`IntersectionObserver`) |
 | **Навигация по секциям**: счётчик 01 / 06 и стрелки | **Section navigation**: 01 / 06 counter and arrows |
@@ -52,7 +54,7 @@ A single-page business card website for a data analyst. Its goal is to present e
 ## Технологии · Tech Stack
 
 | | |
-| --- | --- |
+|---|---|
 | Разметка · Markup | HTML5 |
 | Стили · Styles | CSS3, BEM, CSS Grid, Flexbox |
 | Скрипты · Scripts | Vanilla JavaScript |
@@ -79,7 +81,7 @@ open index.html     # или Live Server в VS Code · or Live Server in VS Code
 
 ## Автор · Author
 
-**Екатерина Туманова · Ekaterina Tumanova** — Frontend Developer & Designer  
+**Екатерина Туманова · Ekaterina Tumanova** — Frontend Developer & Designer<br>
 Дизайн, вёрстка, анимации и деплой · Design, markup, animations and deployment
 
 [Портфолио · Portfolio](https://katymist.github.io/Portfolio/) · [GitHub](https://github.com/KatyMist)
