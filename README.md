@@ -28,12 +28,12 @@ A single-page business card website for a data analyst. Its goal is to present e
 
 | Раздел · Section | Что внутри · Content |
 | --- | --- |
-| [Hero](https://katymist.github.io/DataAnalyst-Portfolio/#hero) | Аналитик данных, фото, резюме и связь <br> Data Analyst, photo, CV download and contact |
-| [Обо мне · About](https://katymist.github.io/DataAnalyst-Portfolio/#about) | Опыт построения аналитики с нуля, LLM, работа с заказчиками <br> Building analytics from scratch, LLMs, stakeholder work |
-| [Опыт · Experience](https://katymist.github.io/DataAnalyst-Portfolio/#experience) | Места работы и достижения <br> Work history and achievements |
-| [Навыки · Skills](https://katymist.github.io/DataAnalyst-Portfolio/#skills) | SQL, Python, BI-инструменты, аналитика <br> SQL, Python, BI tools, analytics |
-| [Образование · Education](https://katymist.github.io/DataAnalyst-Portfolio/#education) | Высшее образование, языки <br> Degrees, languages |
-| [Контакты · Contacts](https://katymist.github.io/DataAnalyst-Portfolio/#contacts) | E-mail, телефон, Telegram, hh.ru, резюме PDF <br> Email, phone, Telegram, hh.ru, PDF CV |
+| [Hero](https://katymist.github.io/DataAnalyst-Portfolio/#hero) | Аналитик данных, фото, резюме и связь<br>Data Analyst, photo, CV download and contact |
+| [Обо мне · About](https://katymist.github.io/DataAnalyst-Portfolio/#about) | Опыт построения аналитики с нуля, LLM, работа с заказчиками<br>Building analytics from scratch, LLMs, stakeholder work |
+| [Опыт · Experience](https://katymist.github.io/DataAnalyst-Portfolio/#experience) | Места работы и достижения<br>Work history and achievements |
+| [Навыки · Skills](https://katymist.github.io/DataAnalyst-Portfolio/#skills) | SQL, Python, BI-инструменты, аналитика<br>SQL, Python, BI tools, analytics |
+| [Образование · Education](https://katymist.github.io/DataAnalyst-Portfolio/#education) | Высшее образование, языки<br>Degrees, languages |
+| [Контакты · Contacts](https://katymist.github.io/DataAnalyst-Portfolio/#contacts) | E-mail, телефон, Telegram, hh.ru, резюме PDF<br>Email, phone, Telegram, hh.ru, PDF CV |
 
 ## Возможности · Features
 
