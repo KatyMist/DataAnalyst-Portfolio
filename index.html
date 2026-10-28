@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Владимир Туманов — аналитик данных</title>
+  <meta name="description" content="Портфолио аналитика данных Владимира Туманова: Big Data, SQL, Python, BI-дашборды.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2316352B'/><rect x='7' y='17' width='4' height='8' fill='white'/><rect x='14' y='11' width='4' height='14' fill='white'/><rect x='21' y='6' width='4' height='19' fill='white'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=14">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbar__right">
+      <div class="pager" aria-hidden="true">
+        <span class="pager__num"><b class="pager__current">01</b> / <span class="pager__total">06</span></span>
+        <button class="pager__btn" data-dir="-1" aria-label="Назад">&larr;</button>
+        <button class="pager__btn" data-dir="1" aria-label="Вперёд">&rarr;</button>
+      </div>
+      <div class="lang" role="group" aria-label="Язык">
+        <button class="lang__btn is-active" data-lang="ru">RU</button>
+        <button class="lang__btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 01 HERO -->
+    <section class="hero section" id="hero">
+      <div class="hero__left">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Портфолио · Big Data</p>
+        <h1 class="hero__title">
+          <span class="line"><span data-i18n="hero.t1">Аналитик</span></span>
+          <span class="line"><span data-i18n="hero.t2">данных</span></span>
+        </h1>
+        <p class="hero__name fade" data-i18n="hero.name">Владимир Туманов</p>
+        <div class="hero__actions fade">
+          <a class="btn btn--primary" href="assets/Tumanov_Vladimir_CV.pdf" download>
+            <span data-i18n="hero.cv">Скачать резюме</span>
+            <span class="btn__icon"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+          <a class="btn btn--ghost" href="#contacts" data-i18n="hero.contact">Связаться</a>
+        </div>
+      </div>
+
+      <div class="hero__photo">
+        <img src="img/photo.jpg" alt="Владимир Туманов, аналитик данных">
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>SQL</span><i>✦</i><span>Python</span><i>✦</i><span>ClickHouse</span><i>✦</i><span>Tableau</span><i>✦</i><span>DataLens</span><i>✦</i><span>Apache Superset</span><i>✦</i><span>Metabase</span><i>✦</i><span>pandas</span><i>✦</i><span>A/B tests</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>LLM</span><i>✦</i><span>Airflow</span><i>✦</i>
+        <span>SQL</span><i>✦</i><span>Python</span><i>✦</i><span>ClickHouse</span><i>✦</i><span>Tableau</span><i>✦</i><span>DataLens</span><i>✦</i><span>Apache Superset</span><i>✦</i><span>Metabase</span><i>✦</i><span>pandas</span><i>✦</i><span>A/B tests</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>LLM</span><i>✦</i><span>Airflow</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- 02 ABOUT -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">02</span>
+          <h2 class="sec-title" data-i18n="about.title">Обо мне</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__intro reveal"><p class="about__big" data-i18n="about.big">Аналитик данных с&nbsp;профильным <em>ИТ-образованием</em> и&nbsp;опытом построения аналитики в&nbsp;компании с&nbsp;нуля.</p></div>
+          <div class="about__cols">
+            <div class="about__col reveal"><p data-i18n="about.p1">В Тендерплане — единственный аналитик: спроектировал архитектуру сбора и хранения данных (ClickHouse, PostgreSQL), разработал дерево из 75+ метрик, создал 10+ дашбордов в Superset и DataLens для всех отделов, выстроил годовое планирование выручки и MRR с отклонением менее 5%.</p></div>
+            <div class="about__col reveal"><p data-i18n="about.p2">Активно применяю LLM и AI-инструменты: с их помощью разработал инструменты импорта данных, плагины для Superset и инструмент аналитики на основе семантических запросов; разворачивал локальные модели.</p></div>
+            <div class="about__col reveal"><p data-i18n="about.p3">Работаю напрямую с заказчиками любого уровня — от менеджера по продажам до CEO: собираю требования и довожу задачу до готового отчёта или инструмента для самостоятельной работы с данными. Одинаково комфортно работаю автономно и в команде: в СберМаркете — в команде аналитиков, в Тендерплане — в тесной связке с разработкой, продажами и маркетингом. Легко выстраиваю взаимодействие со смежными отделами и отвечаю за результат.</p></div>
+          </div>
+          <p class="about__meta reveal" data-i18n="about.meta">Ульяновск · удалённо / гибрид · готов к командировкам</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 EXPERIENCE -->
+    <section class="exp section" id="experience">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">03</span>
+          <h2 class="sec-title" data-i18n="exp.title">Опыт</h2>
+        </div>
+        <ol class="timeline">
+          <li class="job reveal">
+            <div class="job__period" data-i18n="exp.j1.p">окт 2024 — н.в.</div>
+            <div class="job__body">
+              <h3 class="job__company" data-i18n="exp.j1.c">Тендерплан</h3>
+              <p class="job__role" data-i18n="exp.j1.r">Аналитик данных</p>
+              <p class="job__lead" data-i18n="exp.j1.l">Единственный аналитик в компании — построил систему аналитики с нуля.</p>
+              <ul>
+                <li data-i18n="exp.j1.b1">Разработал дерево из 75+ метрик с разбивкой по отделам (20–30 метрик на отдел)</li>
+                <li data-i18n="exp.j1.b2">Создал и поддерживаю 10+ дашбордов для продаж, маркетинга, разработки и руководства</li>
+                <li data-i18n="exp.j1.b3">Выстроил годовое планирование выручки, MRR и клиентской базы — отклонение факта от плана менее 5%</li>
+                <li data-i18n="exp.j1.b4">Спроектировал архитектуру сбора и хранения данных, ставлю задачи разработке и контролирую качество данных</li>
+                <li data-i18n="exp.j1.b5">Разработал плагины для Superset (кастомные визуализации на JS) и инструмент аналитики по семантическим запросам</li>
+                <li data-i18n="exp.j1.b6">Развернул локальные LLM-модели, внедряю AI-инструменты и автоматизирую процессы компании</li>
+                <li data-i18n="exp.j1.b7">Внедрил ролевую модель доступа к данным, веду базу знаний, задачи в Jira и проекты в Atlas</li>
+              </ul>
+              <ul class="job__stack"><li>ClickHouse</li><li>PostgreSQL</li><li>Superset</li><li>DataLens</li><li>Python</li><li>JS</li></ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__period" data-i18n="exp.j2.p">дек 2023 — окт 2024</div>
+            <div class="job__body">
+              <h3 class="job__company" data-i18n="exp.j2.c">СберМаркет</h3>
+              <p class="job__role" data-i18n="exp.j2.r">Аналитик</p>
+              <p class="job__lead" data-i18n="exp.j2.l">Аналитика контакт-центра службы заботы.</p>
+              <ul>
+                <li data-i18n="exp.j2.b1">План/факт-отчётность по ключевым метрикам контакт-центра: FCR, CSI, AHT и др.</li>
+                <li data-i18n="exp.j2.b2">Создал и поддерживал дашборды и отчёты в Metabase и Tableau</li>
+                <li data-i18n="exp.j2.b3">Ad-hoc аналитика по запросам руководителей</li>
+                <li data-i18n="exp.j2.b4">Анализ показателей, поиск точек роста, аналитические исследования</li>
+              </ul>
+              <ul class="job__stack"><li>SQL</li><li>Metabase</li><li>Tableau</li><li>Excel</li></ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__period" data-i18n="exp.j3.p">дек 2021 — дек 2023</div>
+            <div class="job__body">
+              <h3 class="job__company" data-i18n="exp.j3.c">МТС Касса</h3>
+              <p class="job__role" data-i18n="exp.j3.r">Аналитик финансового отдела</p>
+              <p class="job__lead" data-i18n="exp.j3.l">Отчётность по продажам, работа с клиентской базой и дебиторской задолженностью.</p>
+              <ul>
+                <li data-i18n="exp.j3.b1">Ежедневные отчёты по продажам по всем каналам сбыта, ежемесячные — по валовой прибыли</li>
+                <li data-i18n="exp.j3.b2">Сопровождение работы с клиентами и взыскания дебиторской задолженности, еженедельный мониторинг ДЗ</li>
+                <li data-i18n="exp.j3.b3">Еженедельная отчётность по tNPS и когортный анализ клиентской базы (LT, RR)</li>
+                <li data-i18n="exp.j3.b4">Прогнозирование показателей и обоснование плановых цифр</li>
+                <li data-i18n="exp.j3.b5">Качество данных: сбор, валидация, поиск аномалий</li>
+              </ul>
+              <ul class="job__stack"><li>Excel</li><li>Power Query</li><li>VBA</li><li>Python</li><li>Power BI</li></ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__period" data-i18n="exp.j4.p">дек 2016 — дек 2021</div>
+            <div class="job__body">
+              <h3 class="job__company" data-i18n="exp.j4.c">Минприроды Ульяновской области</h3>
+              <p class="job__role" data-i18n="exp.j4.r">Консультант, главный специалист-эксперт</p>
+              <ul>
+                <li data-i18n="exp.j4.b1">Обработка и анализ лесоустроительных данных: табличные, растровые и ГИС-форматы</li>
+                <li data-i18n="exp.j4.b2">Аналитическая отчётность и технические задания для государственных закупок</li>
+                <li data-i18n="exp.j4.b3">Организация аукционов и электронных торгов по аренде лесных участков</li>
+                <li data-i18n="exp.j4.b4">С 2021 года — ответственный за цифровую трансформацию лесного комплекса области</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__period" data-i18n="exp.j5.p">ноя 2012 — июл 2015</div>
+            <div class="job__body">
+              <h3 class="job__company" data-i18n="exp.j5.c">Союз лесоводов и лесопромышленников</h3>
+              <p class="job__role" data-i18n="exp.j5.r">Консультант</p>
+              <ul>
+                <li data-i18n="exp.j5.b1">Разработка проектов освоения лесных участков для рекреационной деятельности</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 04 SKILLS -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">04</span>
+          <h2 class="sec-title" data-i18n="skills.title">Навыки</h2>
+        </div>
+        <div class="skills__grid">
+          <article class="skill reveal">
+            <span class="skill__idx">/01</span>
+            <h3 data-i18n="skills.g1">Данные и базы</h3>
+            <ul class="chips"><li>SQL</li><li>ClickHouse</li><li>PostgreSQL</li><li>ETL</li><li>Apache Airflow</li><li data-i18n="skills.prep">Предобработка данных</li></ul>
+          </article>
+          <article class="skill reveal">
+            <span class="skill__idx">/02</span>
+            <h3 data-i18n="skills.g2">Аналитика</h3>
+            <ul class="chips"><li data-i18n="skills.prod">Продуктовая аналитика</li><li data-i18n="skills.ab">A/B-тесты</li><li data-i18n="skills.cohort">Когортный анализ</li><li data-i18n="skills.stat">Мат. статистика</li><li data-i18n="skills.fc">Прогнозирование</li><li data-i18n="skills.req">Сбор требований</li></ul>
+          </article>
+          <article class="skill reveal">
+            <span class="skill__idx">/03</span>
+            <h3 data-i18n="skills.g3">Python, AI и автоматизация</h3>
+            <ul class="chips"><li>Python</li><li>pandas</li><li>JavaScript</li><li>LLM</li><li>VBA</li><li>Power Query</li><li data-i18n="skills.auto">Автоматизация процессов</li></ul>
+          </article>
+          <article class="skill reveal">
+            <span class="skill__idx">/04</span>
+            <h3 data-i18n="skills.g4">BI и визуализация</h3>
+            <ul class="chips"><li>Apache Superset</li><li>DataLens</li><li>Tableau</li><li>Metabase</li><li>Power BI</li><li>MS Excel</li><li data-i18n="skills.mgmt">Управленческая отчётность</li></ul>
+          </article>
+        </div>
+        <div class="langs reveal">
+          <div class="langs__item"><span data-i18n="skills.ru">Русский</span><b data-i18n="skills.native">родной</b><i style="--w:100%"></i></div>
+          <div class="langs__item"><span data-i18n="skills.en">Английский</span><b>B1</b><i style="--w:55%"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 EDUCATION -->
+    <section class="edu section" id="education">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">05</span>
+          <h2 class="sec-title" data-i18n="edu.title">Образование</h2>
+        </div>
+        <div class="edu__grid">
+          <div class="edu__col">
+            <h4 class="edu__label reveal" data-i18n="edu.higher">Высшее</h4>
+            <div class="edu__item reveal">
+              <span class="edu__year">2023</span>
+              <div><h3 data-i18n="edu.u1">Ульяновский государственный технический университет</h3><p data-i18n="edu.u1d">Информатика и вычислительная техника, профиль «Интеллектуальные системы»</p></div>
+            </div>
+            <div class="edu__item reveal">
+              <span class="edu__year">2015</span>
+              <div><h3 data-i18n="edu.u2">Ульяновский государственный университет</h3><p data-i18n="edu.u2d">Лесное хозяйство, инженер</p></div>
+            </div>
+          </div>
+          <div class="edu__col">
+            <h4 class="edu__label reveal" data-i18n="edu.courses">Курсы и сертификаты</h4>
+            <div class="edu__item edu__item--sm reveal"><span class="edu__year">2023</span><div><h3 data-i18n="edu.k1">Искусственный интеллект, робототехника и сенсорика</h3><p data-i18n="edu.k1d">УлГТУ</p></div></div>
+            <div class="edu__item edu__item--sm reveal"><span class="edu__year">2021</span><div><h3 data-i18n="edu.k2">Основы программирования на Python</h3><p data-i18n="edu.k2d">НИУ ВШЭ</p></div></div>
+            <div class="edu__item edu__item--sm reveal"><span class="edu__year">2021</span><div><h3 data-i18n="edu.k3">Цифровая трансформация</h3><p data-i18n="edu.k3d">РАНХиГС, Центр подготовки руководителей и команд ЦТ</p></div></div>
+            <div class="edu__item edu__item--sm reveal"><span class="edu__year">2014</span><div><h3 data-i18n="edu.k4">Малая академия государственного управления</h3><p data-i18n="edu.k4d">УлГТУ</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 CONTACTS -->
+    <section class="contacts section" id="contacts">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">06</span>
+          <h2 class="sec-title" data-i18n="contacts.title">Контакты</h2>
+        </div>
+        <p class="contacts__big reveal" data-i18n="contacts.big">Давайте превратим ваши данные в&nbsp;<em>решения</em>.</p>
+        <div class="contacts__list reveal">
+          <a class="contact" href="mailto:tymanovvova73@gmail.com">
+            <span class="contact__label">E-mail</span>
+            <span class="contact__value">tymanovvova73<wbr>@gmail.com</span>
+            <span class="contact__arrow">↗</span>
+          </a>
+          <a class="contact" href="tel:+79176151595">
+            <span class="contact__label" data-i18n="contacts.phone">Телефон</span>
+            <span class="contact__value">+7 (917) 615-15-95</span>
+            <span class="contact__arrow">↗</span>
+          </a>
+          <a class="contact" href="https://t.me/Tumanov_VA" target="_blank" rel="noopener">
+            <span class="contact__label">Telegram</span>
+            <span class="contact__value">@Tumanov_VA</span>
+            <span class="contact__arrow">↗</span>
+          </a>
+          <a class="contact" href="https://ulyanovsk.hh.ru/resume/e33ae71aff092dbfbb0039ed1f6c4b54716669" target="_blank" rel="noopener">
+            <span class="contact__label">HeadHunter</span>
+            <span class="contact__value" data-i18n="contacts.hh">Резюме на hh.ru</span>
+            <span class="contact__arrow">↗</span>
+          </a>
+          <a class="contact" href="assets/Tumanov_Vladimir_CV.pdf" download>
+            <span class="contact__label" data-i18n="contacts.cv">Резюме</span>
+            <span class="contact__value">PDF</span>
+            <span class="contact__arrow">↓</span>
+          </a>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>© 2026 <span data-i18n="footer.name">Владимир Туманов</span></span>
+        <span data-i18n="footer.role">Аналитик данных · Big Data</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js?v=10"></script>
+</body>
+</html>
