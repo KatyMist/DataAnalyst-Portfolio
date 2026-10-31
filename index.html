@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=14">
+  <link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
   <div class="progress" aria-hidden="true"></div>
@@ -17,7 +17,7 @@
   <header class="topbar">
     <div class="topbar__right">
       <div class="pager" aria-hidden="true">
-        <span class="pager__num"><b class="pager__current">01</b> / <span class="pager__total">06</span></span>
+        <span class="pager__num"><b class="pager__current">01</b> / <span class="pager__total">07</span></span>
         <button class="pager__btn" data-dir="-1" aria-label="Назад">&larr;</button>
         <button class="pager__btn" data-dir="1" aria-label="Вперёд">&rarr;</button>
       </div>
@@ -198,11 +198,59 @@
       </div>
     </section>
 
-    <!-- 05 EDUCATION -->
-    <section class="edu section" id="education">
+    <!-- 05 PROJECTS -->
+    <section class="projects section" id="projects">
       <div class="container">
         <div class="sec-head reveal">
           <span class="sec-num">05</span>
+          <h2 class="sec-title" data-i18n="projects.title">Проекты</h2>
+        </div>
+        <p class="projects__intro reveal" data-i18n="projects.intro">Два демонстрационных дашборда продаж и собственные плагины для Apache Superset. Один датасет — два подхода к визуализации.</p>
+        <div class="projects__grid">
+          <article class="project reveal">
+            <button class="project__cover project__cover--custom" type="button" data-gallery="custom" aria-haspopup="dialog" aria-labelledby="custom-title custom-view">
+              <img src="img/2/1_01_overview.png" alt="" loading="lazy" width="1920" height="1080">
+              <span class="project__expand" aria-hidden="true">↗</span>
+            </button>
+            <div class="project__body">
+              <p class="project__eyebrow">/01 · Apache Superset</p>
+              <h3 id="custom-title" data-i18n="projects.custom.title">Кастомные визуализации на JavaScript</h3>
+              <p class="project__desc" data-i18n="projects.custom.desc">Демо-дашборд продаж в Apache Superset. Собственный плагин позволяет создавать кастомные чарты на JavaScript: от структуры продаж и анализа рынков до сезонности и детализации клиентов.</p>
+              <ul class="project__tags"><li>Apache Superset</li><li>JavaScript</li></ul>
+              <p class="project__dataset"><span data-i18n="projects.dataset">Демонстрационный датасет</span><br><code>public.cleaned_sales_data</code></p>
+              <div class="project__actions">
+                <button class="project__view" id="custom-view" type="button" data-gallery="custom" aria-haspopup="dialog"><span data-i18n="projects.view">Смотреть примеры</span> <span aria-hidden="true">↗</span></button>
+                <a class="project__pdf" href="img/2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F_%D0%B4%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4_%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8_%D1%82%D0%B5%D0%BC%D0%BD%D1%8B%D0%B8%CC%86.pdf" target="_blank" rel="noopener"><span data-i18n="projects.pdf">Руководство пользователя · PDF ↗</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project reveal">
+            <button class="project__cover project__cover--shadcn" type="button" data-gallery="shadcn" aria-haspopup="dialog" aria-labelledby="shadcn-title shadcn-view">
+              <img src="img/1/2_02_visual_products.png" alt="" loading="lazy" width="2400" height="1600">
+              <span class="project__expand" aria-hidden="true">↗</span>
+            </button>
+            <div class="project__body">
+              <p class="project__eyebrow">/02 · Apache Superset</p>
+              <h3 id="shadcn-title" data-i18n="projects.shadcn.title">Визуализации из библиотеки shadcn/ui</h3>
+              <p class="project__desc" data-i18n="projects.shadcn.desc">Демо-дашборд продаж в Apache Superset. Собственный плагин предоставляет набор open-source визуализаций из библиотеки shadcn/ui для анализа показателей, продуктов, географии и исполнения заказов.</p>
+              <ul class="project__tags"><li>Apache Superset</li><li>shadcn/ui</li></ul>
+              <p class="project__dataset"><span data-i18n="projects.dataset">Демонстрационный датасет</span><br><code>public.cleaned_sales_data</code></p>
+              <div class="project__actions">
+                <button class="project__view" id="shadcn-view" type="button" data-gallery="shadcn" aria-haspopup="dialog"><span data-i18n="projects.view">Смотреть примеры</span> <span aria-hidden="true">↗</span></button>
+                <a class="project__pdf" href="img/1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F_%D0%B4%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4_%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8_%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D1%8B%D0%B8%CC%86.pdf" target="_blank" rel="noopener"><span data-i18n="projects.pdf">Руководство пользователя · PDF ↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="projects__note" data-i18n="projects.pdfNote">Инструкции и изображения на русском языке. PDF открываются в новой вкладке.</p>
+      </div>
+    </section>
+
+    <!-- 06 EDUCATION -->
+    <section class="edu section" id="education">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-num">06</span>
           <h2 class="sec-title" data-i18n="edu.title">Образование</h2>
         </div>
         <div class="edu__grid">
@@ -228,11 +276,11 @@
       </div>
     </section>
 
-    <!-- 06 CONTACTS -->
+    <!-- 07 CONTACTS -->
     <section class="contacts section" id="contacts">
       <div class="container">
         <div class="sec-head reveal">
-          <span class="sec-num">06</span>
+          <span class="sec-num">07</span>
           <h2 class="sec-title" data-i18n="contacts.title">Контакты</h2>
         </div>
         <p class="contacts__big reveal" data-i18n="contacts.big">Давайте превратим ваши данные в&nbsp;<em>решения</em>.</p>
@@ -271,6 +319,22 @@
     </section>
   </main>
 
-  <script src="script.js?v=10"></script>
+  <dialog class="gallery" aria-labelledby="gallery-title">
+    <div class="gallery__head">
+      <h2 id="gallery-title"></h2>
+      <button class="gallery__close" type="button" data-i18n="gallery.close">Закрыть</button>
+    </div>
+    <figure class="gallery__figure">
+      <div class="gallery__viewport"><img class="gallery__image" src="" alt=""></div>
+      <figcaption class="gallery__caption" aria-live="polite"></figcaption>
+    </figure>
+    <div class="gallery__controls">
+      <button class="gallery__prev" type="button" data-i18n="gallery.prev">Предыдущее</button>
+      <span class="gallery__count"></span>
+      <button class="gallery__next" type="button" data-i18n="gallery.next">Следующее</button>
+    </div>
+  </dialog>
+
+  <script src="script.js?v=14"></script>
 </body>
 </html>

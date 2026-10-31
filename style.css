@@ -267,3 +267,52 @@ body.loaded .hero__photo img { opacity: 1; transform: scale(1); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal, .fade, .line > span, .hero__photo img { opacity: 1 !important; transform: none !important; }
 }
+
+/* projects */
+.projects { background: var(--paper); }
+.projects .sec-head { margin-bottom: 32px; }
+.projects__intro { max-width: 710px; margin-bottom: 46px; font-size: clamp(17px, 1.7vw, 21px); color: var(--ink-2); }
+.projects__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.project { min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--bg); }
+.project__cover { position: relative; display: grid; align-items: center; width: 100%; aspect-ratio: 3 / 2; overflow: hidden; border-bottom: 1px solid var(--line); }
+.project__cover--custom { background: #0b1020; }
+.project__cover--shadcn { background: #f3f6fb; }
+.project__cover img { width: 100%; height: auto; transition: transform .6s var(--ease); }
+.project__cover:hover img { transform: scale(1.025); }
+.project__expand { position: absolute; right: 16px; bottom: 16px; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--paper); color: var(--green); font-size: 21px; box-shadow: 0 2px 12px #0002; }
+.project__body { flex: 1; display: flex; flex-direction: column; padding: clamp(22px, 2.5vw, 34px); }
+.project__eyebrow { margin-bottom: 18px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--green-2); }
+.project h3 { font-family: var(--serif); font-weight: 500; font-size: clamp(29px, 3vw, 40px); line-height: 1.1; margin-bottom: 20px; }
+.project__desc { color: var(--ink-2); font-size: 15px; line-height: 1.75; margin-bottom: 22px; }
+.project__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+.project__tags li { border: 1px solid var(--line); border-radius: 30px; padding: 5px 12px; font-size: 12px; color: var(--green-2); }
+.project__dataset { margin: 22px 0; font-size: 12px; color: var(--muted); }
+.project__dataset code { color: var(--ink-2); font-size: 12px; overflow-wrap: anywhere; }
+.project__actions { display: flex; align-items: flex-start; flex-direction: column; gap: 18px; padding-top: 22px; border-top: 1px solid var(--line); }
+.project__view { display: inline-flex; gap: 26px; align-items: center; background: var(--green); color: #fff; padding: 13px 22px; border-radius: 40px; font-size: 14px; transition: background .2s; }
+.project__view:hover { background: var(--green-2); }
+.project__pdf { color: var(--green-2); font-size: 13px; text-decoration: underline; text-underline-offset: 5px; }
+.projects__note { margin-top: 24px; font-size: 12px; color: var(--muted); }
+.project button:focus-visible, .project a:focus-visible, .gallery button:focus-visible { outline: 3px solid var(--green-3); outline-offset: 5px; }
+body.gallery-open { overflow: hidden; }
+.gallery { position: fixed; inset: 0; margin: auto; width: min(1200px, calc(100% - 40px)); max-height: calc(100dvh - 40px); padding: 24px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); overflow: auto; }
+.gallery[open] { display: flex; flex-direction: column; gap: 18px; }
+.gallery::backdrop { background: #0d0f0ee6; }
+.gallery__head { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.gallery__head h2 { font-family: var(--serif); font-size: clamp(23px, 3vw, 34px); font-weight: 500; line-height: 1.1; }
+.gallery__close { flex-shrink: 0; font-size: 13px; text-decoration: underline; text-underline-offset: 5px; padding: 10px 0 10px 10px; }
+.gallery__figure { min-height: 0; }
+.gallery__viewport { max-height: 68dvh; overflow: auto; background: #e8e8e4; }
+.gallery__image { width: 100%; height: auto; }
+.gallery__caption { margin-top: 14px; color: var(--muted); font-size: 14px; }
+.gallery__controls { display: flex; justify-content: space-between; align-items: center; gap: 14px; font-size: 13px; }
+.gallery__controls button { border: 1px solid var(--line); border-radius: 30px; padding: 11px 18px; }
+.gallery__controls button:hover { background: var(--green-soft); }
+.gallery__count { white-space: nowrap; font-variant-numeric: tabular-nums; }
+@media (max-width: 760px) {
+  .projects__grid { grid-template-columns: 1fr; gap: 32px; }
+  .gallery { width: calc(100% - 20px); max-height: calc(100dvh - 20px); padding: 16px; }
+  .gallery__head { gap: 12px; }
+  .gallery__controls { gap: 8px; font-size: 12px; }
+  .gallery__controls button { padding: 11px 12px; }
+}

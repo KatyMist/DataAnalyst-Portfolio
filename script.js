@@ -2,6 +2,19 @@
 
 /* ---------- i18n ---------- */
 const EN = {
+  "projects.title": "Projects",
+  "projects.intro": "Two demo sales dashboards and my own Apache Superset plugins. One dataset, two approaches to visualisation.",
+  "projects.dataset": "Demo dataset",
+  "projects.view": "View examples",
+  "projects.pdf": "User guide · PDF ↗",
+  "projects.pdfNote": "Guides and screenshots are in Russian. PDFs open in a new tab.",
+  "gallery.close": "Close",
+  "gallery.prev": "Previous image",
+  "gallery.next": "Next image",
+  "projects.custom.title": "Custom JavaScript visualisations",
+  "projects.custom.desc": "A demo sales dashboard in Apache Superset. My own plugin enables custom charts written in JavaScript, covering sales composition, markets, seasonality and customer details.",
+  "projects.shadcn.title": "Visualisations from the shadcn/ui library",
+  "projects.shadcn.desc": "A demo sales dashboard in Apache Superset. My own plugin provides a set of open-source visualisations from the shadcn/ui library to explore KPIs, products, geography and order fulfilment.",
   'hero.eyebrow': 'Portfolio · Big Data',
   'hero.t1': 'Data',
   'hero.t2': 'Analyst',
@@ -134,7 +147,7 @@ window.addEventListener('load', () => requestAnimationFrame(() => document.body.
 setTimeout(() => document.body.classList.add('loaded'), 1500);
 
 /* ---------- reveal on scroll ---------- */
-document.querySelectorAll('.about__cols, .stats, .skills__grid, .timeline, .edu__col').forEach((group) => {
+document.querySelectorAll('.about__cols, .stats, .skills__grid, .timeline, .edu__col, .projects__grid').forEach((group) => {
   group.querySelectorAll('.reveal').forEach((el, i) => el.style.setProperty('--d', `${i * 0.08}s`));
 });
 const revealObs = new IntersectionObserver((entries) => {
@@ -245,3 +258,48 @@ if (matchMedia('(hover: hover)').matches) {
     btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
   });
 }
+
+/* ---------- project galleries ---------- */
+const projectGalleries = {"custom": {"titleKey": "projects.custom.title", "slides": [{"src": "img/2/1_01_overview.png", "ru": "Обзор продаж", "en": "Sales overview"}, {"src": "img/2/1_02_structure.png", "ru": "Структура продаж", "en": "Sales composition"}, {"src": "img/2/1_03_details.png", "ru": "Детализация продаж и клиентов", "en": "Sales and customer details"}, {"src": "img/2/1_04_market.png", "ru": "Рынки и структура продаж", "en": "Markets and sales composition"}, {"src": "img/2/1_05_season.png", "ru": "Сезонность продаж", "en": "Sales seasonality"}, {"src": "img/2/1_06_clients.png", "ru": "Анализ клиентов", "en": "Customer analysis"}]}, "shadcn": {"titleKey": "projects.shadcn.title", "slides": [{"src": "img/1/2_02_visual_products.png", "ru": "Продукты и структура продаж", "en": "Products and sales composition"}, {"src": "img/1/2_03_visual_geography.png", "ru": "География продаж", "en": "Sales geography"}, {"src": "img/1/2_04_decision_seasonality.png", "ru": "Сезонность и планирование", "en": "Seasonality and planning"}, {"src": "img/1/2_05_decision_assortment.png", "ru": "Ассортимент и вклад продуктов", "en": "Product range and contribution"}, {"src": "img/1/2_06_decision_execution.png", "ru": "Исполнение заказов", "en": "Order fulfilment"}, {"src": "img/1/2_preview.jpg", "ru": "Обзор демонстрационных материалов", "en": "Demo overview"}]}};
+const gallery = document.querySelector('.gallery');
+const galleryImage = gallery.querySelector('.gallery__image');
+let galleryProject = null;
+let galleryIndex = 0;
+function renderGallery() {
+  const project = projectGalleries[galleryProject];
+  const slide = project.slides[galleryIndex];
+  gallery.querySelector('#gallery-title').textContent = (lang === 'en' ? EN : RU)[project.titleKey];
+  galleryImage.src = slide.src;
+  galleryImage.alt = slide[lang];
+  gallery.querySelector('.gallery__caption').textContent = slide[lang];
+  gallery.querySelector('.gallery__count').textContent = `${galleryIndex + 1} / ${project.slides.length}`;
+  gallery.querySelector('.gallery__viewport').scrollTo(0, 0);
+}
+function stepGallery(direction) {
+  const length = projectGalleries[galleryProject].slides.length;
+  galleryIndex = (galleryIndex + direction + length) % length;
+  renderGallery();
+}
+document.querySelectorAll('[data-gallery]').forEach((button) => {
+  button.addEventListener('click', () => {
+    galleryProject = button.dataset.gallery;
+    galleryIndex = 0;
+    renderGallery();
+    gallery.showModal();
+    document.body.classList.add('gallery-open');
+  });
+});
+gallery.querySelector('.gallery__close').addEventListener('click', () => gallery.close());
+gallery.querySelector('.gallery__prev').addEventListener('click', () => stepGallery(-1));
+gallery.querySelector('.gallery__next').addEventListener('click', () => stepGallery(1));
+gallery.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    event.preventDefault();
+    stepGallery(event.key === 'ArrowLeft' ? -1 : 1);
+  }
+});
+gallery.addEventListener('click', (event) => {
+  const rect = gallery.getBoundingClientRect();
+  if (event.target === gallery && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) gallery.close();
+});
+gallery.addEventListener('close', () => document.body.classList.remove('gallery-open'));

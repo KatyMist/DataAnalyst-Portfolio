@@ -34,6 +34,7 @@ A single-page business card website for a data analyst. Its goal is to present e
 | [Обо мне · About](https://katymist.github.io/DataAnalyst-Portfolio/#about) | Опыт построения аналитики с нуля, LLM, работа с заказчиками<br>Building analytics from scratch, LLMs, stakeholder work |
 | [Опыт · Experience](https://katymist.github.io/DataAnalyst-Portfolio/#experience) | Места работы и достижения<br>Work history and achievements |
 | [Навыки · Skills](https://katymist.github.io/DataAnalyst-Portfolio/#skills) | SQL, Python, BI-инструменты, аналитика<br>SQL, Python, BI tools, analytics |
+| [Проекты · Projects](https://katymist.github.io/DataAnalyst-Portfolio/#projects) | Демо-дашборды Superset, собственные плагины, галереи и PDF-инструкции<br>Superset demo dashboards, custom plugins, galleries and PDF guides |
 | [Образование · Education](https://katymist.github.io/DataAnalyst-Portfolio/#education) | Высшее образование, языки<br>Degrees, languages |
 | [Контакты · Contacts](https://katymist.github.io/DataAnalyst-Portfolio/#contacts) | E-mail, телефон, Telegram, hh.ru, резюме PDF<br>Email, phone, Telegram, hh.ru, PDF CV |
 
@@ -43,7 +44,7 @@ A single-page business card website for a data analyst. Its goal is to present e
 |---|---|
 | **Два языка**: переключатель RU / EN, выбор сохраняется в `localStorage` | **Two languages**: RU / EN toggle, choice saved in `localStorage` |
 | **Анимации появления** блоков при прокрутке (`IntersectionObserver`) | **Reveal animations** on scroll (`IntersectionObserver`) |
-| **Навигация по секциям**: счётчик 01 / 06 и стрелки | **Section navigation**: 01 / 06 counter and arrows |
+| **Навигация по секциям**: счётчик 01 / 07 и стрелки | **Section navigation**: 01 / 07 counter and arrows |
 | **Бегущая строка** со стеком технологий | **Marquee** with the tech stack |
 | **Подсветка карточек навыков**, следующая за курсором | **Skill card glow** that follows the cursor |
 | **Скачивание резюме** в PDF | **CV download** as PDF |
@@ -67,7 +68,7 @@ A single-page business card website for a data analyst. Its goal is to present e
 ├── index.html   # Страница · Page
 ├── style.css    # Стили · Styles
 ├── script.js    # Переводы и анимации · i18n and animations
-├── img/         # Фото · Photo
+├── img/         # Фото, изображения проектов и PDF-инструкции · Photo, project images and PDF guides
 └── assets/      # Резюме PDF · CV
 ```
 
